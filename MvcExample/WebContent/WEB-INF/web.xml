@@ -1,0 +1,73 @@
+<web-app>
+	<servlet>
+	<servlet-name>first</servlet-name>
+	<servlet-class>com.motivitylabs.DoctorRegister</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>first</servlet-name>
+	<url-pattern>/doctor_register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>second</servlet-name>
+	<servlet-class>com.motivitylabs.DoctorLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>second</servlet-name>
+	<url-pattern>/doctor_login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>third</servlet-name>
+	<servlet-class>com.motivitylabs.DoctorUpdate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>third</servlet-name>
+	<url-pattern>/doctor_update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>fourth</servlet-name>
+	<servlet-class>com.motivitylabs.PatientRegister</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>fourth</servlet-name>
+	<url-pattern>/patient_register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>fifth</servlet-name>
+	<servlet-class>com.motivitylabs.PatientLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>fifth</servlet-name>
+	<url-pattern>/patient_login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>sixth</servlet-name>
+	<servlet-class>com.motivitylabs.PatientUpdate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>sixth</servlet-name>
+	<url-pattern>/patient_update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>seventh</servlet-name>
+	<servlet-class>com.motivitylabs.Appointment</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>seventh</servlet-name>
+	<url-pattern>/apply_appointment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>eighth</servlet-name>
+	<servlet-class>com.motivitylabs.AcceptAppointment</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>eighth</servlet-name>
+	<url-pattern>/accept_appointment</url-pattern>
+	</servlet-mapping>
+	</web-app>
