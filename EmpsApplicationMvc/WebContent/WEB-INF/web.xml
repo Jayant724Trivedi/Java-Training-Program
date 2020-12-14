@@ -1,0 +1,93 @@
+<web-app>
+<servlet>
+	<servlet-name>first</servlet-name>
+	<servlet-class>com.office.EmployeeRegister</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>first</servlet-name>
+	<url-pattern>/employee_register</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	<servlet-name>second</servlet-name>
+	<servlet-class>com.office.EmployeeLogin</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>second</servlet-name>
+	<url-pattern>/employee_login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>third</servlet-name>
+	<servlet-class>com.office.ManagerRegister</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>third</servlet-name>
+	<url-pattern>/manager_register</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	<servlet-name>four</servlet-name>
+	<servlet-class>com.office.ManagerLogin</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>four</servlet-name>
+	<url-pattern>/manager_login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>fifth</servlet-name>
+	<servlet-class>com.office.ManagerUpdate</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>fifth</servlet-name>
+	<url-pattern>/manager_update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>sixth</servlet-name>
+	<servlet-class>com.office.EmployeeUpdate</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>sixth</servlet-name>
+	<url-pattern>/employee_update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>seventh</servlet-name>
+	<servlet-class>com.office.Leave</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>seventh</servlet-name>
+	<url-pattern>/apply_leave</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>eighth</servlet-name>
+	<servlet-class>com.office.AcceptLeave</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>eighth</servlet-name>
+	<url-pattern>/accept_leave</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>ninth</servlet-name>
+	<servlet-class>com.office.RejectLeave</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>ninth</servlet-name>
+	<url-pattern>/reject_leave</url-pattern>
+	</servlet-mapping>
+	</web-app>
