@@ -14,7 +14,7 @@ public class DeleteLogic {
 		Session se=sf.openSession();
 		Transaction tx=se.beginTransaction();
 		Student s=new Student();
-		s.setId(1024);
+		s.setId(0);
 		se.delete(s);
 		tx.commit();
 		se.close();
