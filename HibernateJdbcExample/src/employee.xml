@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.motivity.Employee" table="employee25">
+<id name="id" column="eid"></id>
+<property name="name" column="ename"></property>
+<property name="salary" column="salary"></property>
+<property name="department" column="department"></property>
+<property name="designation" column="designation"></property>
+<property name="address" column="address"></property>
+<property name="phone" column="phone"></property>
+<property name="DOJ" column="DOJ"></property>
+</class>
+</hibernate-mapping>
