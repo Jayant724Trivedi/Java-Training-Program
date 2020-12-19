@@ -1,0 +1,29 @@
+<web-app>
+	<servlet>
+	<servlet-name>first</servlet-name>
+	<servlet-class>com.office.HirerRegister</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>first</servlet-name>
+	<url-pattern>/hirer_register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>second</servlet-name>
+	<servlet-class>com.office.HirerLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>second</servlet-name>
+	<url-pattern>/hirer_login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>third</servlet-name>
+	<servlet-class>com.office.HireeRegister</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>third</servlet-name>
+	<url-pattern>/hiree_register</url-pattern>
+	</servlet-mapping>
+	
+	</web-app>
