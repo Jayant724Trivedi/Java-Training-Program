@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selectors,Grouping and Position</title>
+        <style>
+            *{
+                color: black;
+                font-weight: bold;
+            }
+            .h1{
+                font-size: 30px;
+                color: crimson;
+                text-align: center;
+            }
+            #form{
+                border: 2px solid brown;
+                margin-left: 40%;
+                margin-right: 40%;
+                border-radius: 10px;
+                text-align: center;
+                padding: 5%;
+            }
+            button{
+                background-color: blueviolet;
+                color: black;
+                font-weight: 500;
+                padding: 1%;
+            }
+            label,button{
+                color: black;
+            }
+            div.static{
+                position: static;
+                border: 2px solid brown;
+            }
+        </style>
+    </head>
+    <body bgcolor="silver">
+        <h1 class="h1">Signup Form</h1>
+        <div id="form">
+            <form>
+                <label>First Name</label><br><br>
+                <input type="text" placeholder="Enter First Name"/><br><br>
+                <label>Last Name</label><br><br>
+                <input type="text" placeholder="Enter Last Name"/><br><br>
+                <label>Email</label><br><br>
+                <input type="email" placeholder="Enter Email"/><br><br>
+                <label>Password</label><br><br>
+                <input type="password" placeholder="Enter Password"/><br><br>
+                <label>Confirm Password</label><br><br>
+                <input type="password" placeholder="Confirm Password"/><br><br>
+                <button>Sign Up</button>
+            </form>
+    </body>
+</html>
