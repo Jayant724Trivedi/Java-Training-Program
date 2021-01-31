@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is mediaQuery Page</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .main{
+                font-style: normal;
+                font-weight: bold;
+                color: blueviolet;
+            }
+            .div1{
+                background-color: crimson;
+                border: 2px solid purple;
+                padding: 4%;
+                width: 500px;
+                height: 200px;
+            }
+            .div2{
+                background-color: pink;
+                border: 2px solid purple;
+                padding:4% ;
+                width: 500px;
+                height: 200px;
+            }
+            button{
+                background-color: rebeccapurple;
+                padding: 1%;
+                color: rosybrown;
+            }
+            @media screen and (max-width:600px) {
+                .div1{
+                    background-color: lightcoral;
+                    width: 100%;
+                }
+                .div2{
+                    background-color: slateblue;
+                    width: 100%;
+                }
+            }
+            @media print{
+                .div1{
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1 class="main">THIS IS THE MEDIA QUERY</h1>
+            <div class="div1">
+                <h1>Like and Subscribe my youtube channel</h1>
+                <button>Like</button>
+                <button>Subscribe</button>
+            </div><br><br>
+            <div class="div2">
+                <h1>Like and Subscribe my youtube channel</h1>
+                <button>Like</button>
+                <button>Subscribe</button>
+            </div>
+        </center>
+    </body>
+</html>
