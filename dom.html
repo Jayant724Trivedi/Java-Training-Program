@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is DOM Page</title>
+        <script>
+            function fun1(){
+                var a=document.title;
+                alert("Document title:" +a);
+            }
+            function fun2(){
+                var b=document.URL;
+                var c=document.lastModified;
+                var d=document.location;
+
+                document.write("Document URL:"+b);
+                document.write("Document URL:"+b);
+                document.write("Document URL:"+b);
+            }
+            function fun3(){
+                var n=document.forms[1];
+                document.write("Second form elements:"+n);
+            }
+        </script>
+    </head>
+    <body bgcolor="pink">
+        <center>
+            <h1 style="color: purple;">Introduction of DOM</h1>
+            <form name="form1">
+                <p style="background-color: hotpink;">Section 1:</p>
+                <button name="b1" id="1" value="title" onclick="fun1()" style="background-color: brown;">
+                    Title
+                </button>
+
+                <button name="b2" id="2" value="INFO" onclick="fun2()" style="background-color: green;">
+                    URL
+                </button>
+            </form>
+            <br>
+
+            <form name="form2">
+                <p style="background-color:skyblue;">Section 2:</p>
+                <br><br>
+                <button name="bt1" id="1" value="submit" onclick="fun3()" style="background-color: crimson;">
+                    Submit
+                </button>
+            </form>
+        </center>
+    </body>
+</html>
