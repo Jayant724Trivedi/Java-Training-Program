@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Programs in JavaScript</title>
+    </head>
+    <body bgcolor="hotpink">
+        <script>
+            console.log('Hello JavaScript');
+           alert("Hello,JavaScript!");
+           document.write('Hello,JavaScript!');
+
+            var num1=parseInt(prompt('Enter the first number:'));
+            var num2=parseInt(prompt('Enter the second number:'));
+            var sum=num1+num2;
+            console.log(`The sum of ${num1} and ${num2} is ${sum}`);
+
+            var operator=prompt('Enter operator( either +,-,* or /):');
+            var num1=parseInt(prompt('Enter the first number:'));
+            var num2=parseInt(prompt('Enter the second number:'));
+            let result;
+            if(operator=='+'){
+                result=num1+num2;
+            }
+            else if(operator=='-'){
+                result=num1-num2;
+            }
+            else if(operator=='*'){
+                result=num1*num2;
+            }
+            else{
+                result=num1/num2;
+            }
+            console.log(`${num1} ${operator} ${num2}=${result}`);
+        </script>
+    </body>
+</html>
