@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Page</title>
+        <!-- Latest compiled and minified CSS -->
+<link
+rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+crossorigin="anonymous"
+/>
+<!-- Optional theme -->
+<link
+rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+crossorigin="anonymous"
+/>
+<!-- Latest compiled and minified JavaScript -->
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+crossorigin="anonymous"
+></script>
+</head>
+<body style="background-color:silver;">
+<center><h1 style="color:blue;"> Bootstrap css framework</h1></center>
+<ul class="nav nav-tabs">
+<li role="presentation" class="active"><a href="#">Home</a></li>
+<li role="presentation"><a href="#">Profile</a></li>
+<li role="presentation"><a href="#">Messages</a></li>
+</ul>
+
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="#">Website1 </a>
+</div>
+</div>
+</nav>
+
+<button class="btn btn-success" type="button">
+Messages <span class="badge">1</span>
+</button>
+
+<div class="alert alert-danger" role="alert">Error! Try again</div>
+
+<div class="row">
+<div class="col-sm-6 col-md-3">
+<div class="thumbnail">
+<img src="..." alt="..." />
+<div class="caption">
+<h3>Thumbnail label</h3>
+<p>...</p>
+<p>
+<a href="#" class="btn btn-primary" role="button">Button</a>
+<a href="#" class="btn btn-info" role="button">Button</a>
+</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-md-3">
+<div class="thumbnail">
+<img src="..." alt="..." />
+<div class="caption">
+<h3>Thumbnail label</h3>
+<p>...</p>
+<p>
+<a href="#" class="btn btn-success" role="button">Button</a>
+<a href="#" class="btn btn-danger" role="button">Button</a>
+</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-md-3">
+<div class="thumbnail">
+<img src="..." alt="..." />
+<div class="caption">
+<h3>Thumbnail label</h3>
+<p>...</p>
+<p>
+<a href="#" class="btn btn-warning" role="button">Button</a>
+<a href="#" class="btn btn-default" role="button">Button</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<center>
+<h2 style="color: purple;">Bootstrap Glyphicon Components</h2>
+<p>Search icon:<span class="glyphicon glyphicon-search" aria-hidden="true"></span></p>
+<p>Envelope icon:<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></p>
+<p>Music icon:<span class="glyphicon glyphicon-music" aria-hidden="true"></span></p>
+<p>User icon:<span class="glyphicon glyphicon-user" aria-hidden="true"></span></p>
+<p>QRCode icon:<span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span></p>
+</center>
+
+<div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+  </div>
+  
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+    <span class="input-group-addon" id="basic-addon2">@example.com</span>
+  </div>
+  
+  <div class="input-group">
+    <span class="input-group-addon">$</span>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+    <span class="input-group-addon">.00</span>
+  </div>
+  
+  <label for="basic-url">Your vanity URL</label>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+  </div>
+
+  <nav aria-label="Page navigation">
+    <ul class="pagination">
+      <li>
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav aria-label="...">
+    <ul class="pagination">
+      <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+      ...
+    </ul>
+  </nav>
+
+<!-- Single button -->
+<div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Action <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+</div>
+</body>
+</html>
