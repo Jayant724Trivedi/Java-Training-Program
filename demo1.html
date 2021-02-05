@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function Operations in JS</title>
+        <script type="text/javascript">
+            //Hoisting Concept
+            function Hoist(){
+             a=10;
+            let b=50;
+            const c=20;
+}
+            Hoist();
+            console.log(a);
+           // console.log(b);
+           // console.log(c);
+
+            var x=10;
+            console.log(x);
+            function test(){
+                var x=20;
+                console.log(x);
+                if(x>10){
+                    let x=30;
+                    console.log(x);
+                }
+                console.log(x);
+            }
+            test();
+            console.log(x);
+
+            //Function Arguments
+            function add(a,b){
+                console.log(a,b,arguments.length);
+            }
+            let result=add(2,5);
+            console.log("Function Argument:",result);
+
+            //Anonymous Function
+
+            var a=function(a,b){
+                return a+b;
+            }
+            console.log(a(2,3));
+
+            var sayHello=function() {
+                alert('Hello');
+            }
+            sayHello();
+
+            //Function Expression
+            var calMul=function Mul(x,y){
+                let z=x*y;
+                return z;
+            }
+            console.log("Multiplication:"+calMul(7,4));
+
+            //First-Class Citizens
+
+            function add(a,b){
+                return a+b;
+            }
+            let sum=add;
+            function average(a,b,fn){
+                return fn(a,b)/2;
+            }
+            let answer=average(10,20,sum);
+            console.log("First-Class Citizen:",answer);
+
+            //Closure Concept
+            function outer(){
+                var a=20;
+                function inner(){
+                    console.log("Closure Concept:",a);
+                }
+                inner();
+            }
+            outer();
+        </script>
+    </head>
+</html>
