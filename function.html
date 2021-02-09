@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function Operations in JS</title>
+        <script>
+            //filter() Method
+            let student=[
+                {
+                "id":1,
+                "name":"ram",
+                "age":20,
+                "address":"Indore",
+                },
+
+                {
+                "id":3,
+                "name":"ajay",
+                "age":23,
+                "address":"Delhi",
+                },
+
+                {
+                "id":2,
+                "name":"anil",
+                "age":22,
+                "address":"Bhopal"
+                },
+
+                {
+                "id":4,
+                "name":"jhon",
+                "age":24,
+                "address":"Mumbai",
+                },
+            ]
+            console.log("Before Filter",student);
+            let filteredData=student.filter(function(item)
+            {
+                return item.age>20;
+            })
+            console.log("After Filter",filteredData);
+
+            // map() Method
+            console.log("Before Map",student);
+            let mappedData=student.map(function(item)
+            {
+                //return item.age;
+                return item.id;
+            })
+            console.log("After Map",mappedData);
+
+            // reduce() Method
+            console.log("Before reduce",student);
+            let reducedData=student.reduce(function(sum,item)
+            {
+                return sum+item.age;
+            },0)
+            console.log("After Reduce",reducedData);
+
+            //Callbacks
+            function add(a,b,callback){
+                document.write(`The sum of ${a} and ${b} is ${a+b}.`+"<br>");
+                callback();
+            }
+            function disp(){
+                document.write('This is callback method print after addition');
+            }
+            add(15,20,disp);
+
+            //Promises Resolved
+            var promise=new Promise(function(resolve,reject){
+                resolve('Promise Success');
+            })
+            promise.then(function(successMessage){
+                console.log(successMessage);
+            }, function(errorMessage) {
+                console.log(errorMessage);
+            })
+            //Promises Rejected
+
+            var promise=new Promise(function(resolve,reject){
+                resolve('Promise Rejected');
+            })
+            promise.then(function(successMessage){
+                console.log(successMessage);
+            }).catch(function(errorMessage) {
+                console.log(errorMessage);
+            })
+
+            //Async/Await Function
+
+            const getData=async()=>{
+                var data="Hello World";
+                return data;
+            }
+            getData().then(data=>console.log(data));
+
+            const getRes=async()=>{
+                var x=await "Hello World";
+                console.log(x);
+            }
+            console.log(1);
+            getRes();
+            console.log(2);
+        </script>
+    </head>
+</html>
